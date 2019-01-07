@@ -1,19 +1,19 @@
-<section id="contact" class="row" data-city="{{$options->location}}">
+<section id="contact" class="row no-gutters" data-city="{{$options->location}}">
     <div class="col-md-6 locationInfo">
-        <div class="wrap row no-gutter">
+        <div class="wrap row no-gutters">
 
             <div class="col-12 cityBlock">
                 Currently in <span id="city"></span>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-6">
                 <div id="clock">
                     <i class="fal fa-clock"></i>
                 </div>
                 <div id="time"></div>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-6">
                 <div id="weatherIcon"></div>
                 <div>
                     <span id="tempF">70</span>˚F / <span id="tempC">20</span>˚C

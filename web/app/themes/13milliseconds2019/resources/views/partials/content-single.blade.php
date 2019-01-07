@@ -16,6 +16,10 @@
           @include('partials.media-video')
         @elseif ($block['acf_fc_layout'] == 'embed')
           @include('partials.media-embed')
+        @elseif ($block['acf_fc_layout'] == 'text')
+          @include('partials.media-text')
+        @elseif ($block['acf_fc_layout'] == 'quote')
+          @include('partials.media-quote')
         @endif
       @endforeach
     @endif

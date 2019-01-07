@@ -23,14 +23,39 @@ article{
                     width: 100%;
                 }
             }
+
+            &.quote{
+                padding: 50px;
+
+                .wrap{
+                    font-size: 30px;
+                    color: $white;
+                }
+            }
+
+            &.text{
+                max-width: 800px;
+                margin: auto;
+            }
         }
     }
 
     #postNav{
         text-align: center;
+        color: $white;
+        font-size: 30px;
 
         div{
             padding: 50px 20px;
+        }
+
+        a{
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+                color: inherit;
+            }
         }
     }
 }

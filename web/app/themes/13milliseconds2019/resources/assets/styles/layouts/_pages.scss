@@ -1,53 +1,73 @@
 //Home
 .home {
-    section {
-        
-    }
-
     #top {
         padding: 100px 20px;
         background-color: theme-color('yellow');
         font-size: 50px;
+
+        .wrap{
+            max-width: 1200px;
+        }
 
         a{
             color: $black;
             text-decoration: underline;
 
             &:hover{
-                color: theme-color('blue');
+                //color: theme-color('blue');
+                text-decoration-style: wavy;
             }
         }
     }
 
     #portfolio{
         .portfolio-item{
+            display: block;
             padding: 100px 50px;
+            border: 2px dashed transparent;
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
 
-            a{
-                color: white;
-                text-decoration: none;
+            &:hover{
+                border-color: $white;
             }
 
-            h2{
-                margin-bottom: 0;
-            }
-
-            .categories{
-                margin-bottom: 50px;
-
-                span{
-                    &:after{
-                        content: ', '
-                    }
-
-                    &:last-child{
+            header{
+                h2{
+                    margin-bottom: 0;
+                }
+    
+                .categories{
+                    margin-bottom: 50px;
+    
+                    span{
                         &:after{
-                            content: ''
+                            content: ', '
+                        }
+    
+                        &:last-child{
+                            &:after{
+                                content: ''
+                            }
                         }
                     }
-                }
+                }    
             }
 
+            .illustration{
+                flex: 1;
+                display: flex;
+                align-items: center;
+
+                img{
+                    display: block;
+                    margin: auto;
+                    max-width: 70%;
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -117,5 +137,34 @@
                 text-decoration: underline;
             }
         }    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home{
+        #top{
+            font-size: 30px;
+        }
+    }
+
+    .page.about{
+        #top, #clients{
+            font-size: 30px;
+        }
+    }
+
+    #contact{
+        font-size: 20px;
+
+        .locationInfo{
+            i{
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .contactInfo .email{
+            font-size: 1.2em;
+        }
     }
 }

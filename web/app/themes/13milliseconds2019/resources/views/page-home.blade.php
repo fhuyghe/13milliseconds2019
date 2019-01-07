@@ -2,9 +2,11 @@
 
 @section('content')
   <section id="top">
-  @while(have_posts()) @php the_post() @endphp
-    @php the_content() @endphp
-  @endwhile
+    <div class="wrap">
+      @while(have_posts()) @php the_post() @endphp
+        @php the_content() @endphp
+      @endwhile
+    </div>
   </section>
 
 
