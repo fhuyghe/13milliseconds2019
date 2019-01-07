@@ -1,0 +1,23 @@
+
+.banner{
+  height: 0;
+  padding: 0 20px;
+
+  a{
+    color: $black;
+    display: inline-block;
+    padding-top: 20px;
+
+    &.aboutLink{
+      float: right;
+    }
+  }
+
+  .nav li {
+    @extend .nav-item;
+  }
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}

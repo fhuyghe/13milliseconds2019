@@ -1,0 +1,121 @@
+//Home
+.home {
+    section {
+        
+    }
+
+    #top {
+        padding: 100px 20px;
+        background-color: theme-color('yellow');
+        font-size: 50px;
+
+        a{
+            color: $black;
+            text-decoration: underline;
+
+            &:hover{
+                color: theme-color('blue');
+            }
+        }
+    }
+
+    #portfolio{
+        .portfolio-item{
+            padding: 100px 50px;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            h2{
+                margin-bottom: 0;
+            }
+
+            .categories{
+                margin-bottom: 50px;
+
+                span{
+                    &:after{
+                        content: ', '
+                    }
+
+                    &:last-child{
+                        &:after{
+                            content: ''
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//About
+.page.about{
+    #top, #clients{
+        padding: 100px 20px;
+        font-size: 50px;
+
+        .wrap{
+            max-width: 1000px;
+        }
+    }
+    #top{
+        background-color: theme-color('yellow');
+    }
+
+    #clients{
+        background-color: theme-color('blue');
+        color: $white;
+    }
+}
+
+
+//Contact Footer
+#contact{
+    padding: 0;
+    font-size: 30px;
+
+    &> div{
+        padding: 50px;
+    }
+
+    .locationInfo{
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        .cityBlock{
+            margin-bottom: 50px;
+        }
+
+        #city{
+            text-decoration: underline;
+        }
+    }
+
+    .contactInfo{
+        background-color: theme-color('yellow');
+        display: flex;
+        align-items: center;
+
+        .email{
+            font-size: 1.5em;
+            margin-bottom: 50px;
+        }
+
+        a{
+            display: block;
+            color: $black;
+            text-decoration: none;
+
+            &:hover{
+                color: $black;
+                text-decoration: underline;
+            }
+        }    
+    }
+}

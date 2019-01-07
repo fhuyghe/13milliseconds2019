@@ -1,0 +1,28 @@
+.container-fluid{
+    padding: 0;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+.red{
+    background-color: theme-color('red');
+}
+.yellow{
+    background-color: theme-color('yellow');
+}
+.green{
+    background-color: theme-color('green');
+}
+.blue{
+    background-color: theme-color('blue');
+}
+.pink{
+    background-color: theme-color('pink');
+}

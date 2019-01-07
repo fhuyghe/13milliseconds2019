@@ -1,0 +1,36 @@
+article{
+    header{
+        padding: 100px 20px 200px;
+        background-color: theme-color('blue');
+        color: $white;
+
+        .wrap{
+            max-width: 800px;
+            margin: auto;
+        }
+    }
+
+    .entry-content{
+        padding: 0 20px;
+        max-width: 1040px;
+        margin: -100px auto 100px;
+
+        .media-block{
+            margin-bottom: 50px;
+
+            &.image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #postNav{
+        text-align: center;
+
+        div{
+            padding: 50px 20px;
+        }
+    }
+}
