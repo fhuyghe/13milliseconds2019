@@ -1,15 +1,22 @@
 
 .banner{
-  height: 0;
-  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 99;
 
-  a{
-    color: $black;
-    display: inline-block;
-    padding-top: 20px;
+  .brand{
+    display: block;
+    transform: rotate(0deg);
+    transition: .5s;
 
-    &.aboutLink{
-      float: right;
+    &:hover{
+      transform: rotate(180deg);
+    }
+
+    img{
+      max-width: 100px;
     }
   }
 

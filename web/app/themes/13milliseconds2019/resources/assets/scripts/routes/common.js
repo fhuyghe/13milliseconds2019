@@ -89,6 +89,12 @@ export default {
 
     request.send();
       }
+
+    //Rotate the logo
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop() / 2;
+      $('.brand img').css('transform', 'rotate(' + scroll + 'deg)')
+    })
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
