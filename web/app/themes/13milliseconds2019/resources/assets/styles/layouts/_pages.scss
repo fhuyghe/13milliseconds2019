@@ -12,10 +12,14 @@
         a{
             color: $black;
             text-decoration: underline;
+            text-decoration-color: theme-color('blue');
+            text-decoration-style: wavy;
+            -webkit-text-decoration-skip: none;
+            //transition: .3s;
 
             &:hover{
-                //color: theme-color('blue');
-                text-decoration-style: wavy;
+                color: theme-color('blue');
+                text-decoration-color: $black;
             }
         }
     }
@@ -75,7 +79,7 @@
 //About
 .page.about{
     #top, #clients{
-        padding: 100px 20px;
+        padding: 50px 20px;
         font-size: 50px;
 
         .wrap{
@@ -110,6 +114,7 @@
 
         .cityBlock{
             margin-bottom: 50px;
+            font-size: 40px;
         }
 
         #city{

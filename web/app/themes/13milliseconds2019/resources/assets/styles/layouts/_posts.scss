@@ -22,6 +22,11 @@ article{
                 img{
                     width: 100%;
                 }
+
+                .caption{
+                    text-align: center;
+                    margin-top: 5px;
+                }
             }
 
             &.quote{
@@ -37,6 +42,43 @@ article{
                 max-width: 800px;
                 margin: auto;
             }
+
+            &.gallery{
+                .image{
+                    margin-bottom: 50px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &.websiteSpread{
+                .content{
+                    height: 800px;
+                    overflow: hidden scroll;
+                    border: 2px solid lightgrey;
+                    position: relative;
+
+                    img{
+                        width: 100%;
+                    }
+
+                    .header{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            &.video{
+                video{
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 1000px;
+                }
+            }
         }
     }
 
@@ -45,7 +87,7 @@ article{
         color: $white;
         font-size: 30px;
 
-        div{
+        & > div{
             padding: 50px 20px;
         }
 
@@ -53,8 +95,15 @@ article{
             text-decoration: none;
 
             &:hover{
-                text-decoration: underline;
                 color: inherit;
+
+                h3{
+                    text-decoration: underline;
+                }
+            }
+
+            .categories{
+                font-size: .6em;
             }
         }
     }

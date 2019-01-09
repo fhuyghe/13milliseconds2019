@@ -9,6 +9,16 @@ $theme-colors: (
   "green": #3FB13B
 );
 
+@font-face {
+  font-family: 'maison-neue';
+  src: url('../fonts/maisonneue-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/maisonneue-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/maisonneue-book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/maisonneue-book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/maisonneue-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/maisonneue-book.svg#maisonneue-book') format('svg'); /* Legacy iOS */
+}
+
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
