@@ -20,17 +20,27 @@ a{
 }
 
 .red{
-    background-color: theme-color('red');
+    .categories{
+        color: theme-color('red');
+    }
 }
 .yellow{
-    background-color: theme-color('yellow');
+    .categories{
+    color: theme-color('yellow');
+    }
 }
 .green{
-    background-color: theme-color('green');
+    .categories{
+    color: theme-color('green');
+    }
 }
 .blue{
-    background-color: theme-color('blue');
+    .categories{
+    color: theme-color('blue');
+    }
 }
 .pink{
-    background-color: theme-color('pink');
+    .categories{
+    color: theme-color('pink');
+    }
 }

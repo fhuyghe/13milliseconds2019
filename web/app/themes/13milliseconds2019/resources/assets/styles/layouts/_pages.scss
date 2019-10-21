@@ -1,7 +1,7 @@
 //Home
 .home {
     #top {
-        padding: 100px 20px;
+        padding: 100px 50px;
         background-color: theme-color('yellow');
         font-size: 50px;
 
@@ -27,9 +27,8 @@
     #portfolio{
         .portfolio-item{
             display: block;
-            padding: 100px 50px;
+            padding: 50px;
             border: 2px dashed transparent;
-            color: $white;
             text-decoration: none;
             display: flex;
             flex-direction: column;
@@ -38,39 +37,34 @@
                 border-color: $white;
             }
 
-            header{
-                h2{
-                    margin-bottom: 0;
+            h2{
+                margin-bottom: 0;
+
+                a{
+                    text-decoration: none;
                 }
-    
-                .categories{
-                    margin-bottom: 50px;
-    
-                    span{
+            }
+
+            .categories{
+                text-transform: uppercase;
+
+                span{
+                    &:after{
+                        content: ', '
+                    }
+
+                    &:last-child{
                         &:after{
-                            content: ', '
-                        }
-    
-                        &:last-child{
-                            &:after{
-                                content: ''
-                            }
+                            content: ''
                         }
                     }
-                }    
+                }
             }
 
             .illustration{
-                flex: 1;
-                display: flex;
-                align-items: center;
-
-                img{
-                    display: block;
-                    margin: auto;
-                    max-width: 70%;
-                    width: 100%;
-                }
+                height: 300px;
+                background-size: cover;
+                margin-bottom: 20px;
             }
         }
     }

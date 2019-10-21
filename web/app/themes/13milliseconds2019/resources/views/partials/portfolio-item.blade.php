@@ -1,17 +1,16 @@
 @php $categories = get_the_category($project->ID); @endphp
-<a href="{{ get_permalink($project)}}" class="portfolio-item col-md-6 {{ the_field('color', $project->ID) }}" >
-    <header>
-        <h2>{{ $project->post_title }}</h2>
-
-        <div class="categories">
-            @foreach($categories as $cat)
-                <span>{{$cat->name}}</span>
-            @endforeach
-        </div>
-    </header>
-
-    <div class="illustration">
+<div class="portfolio-item col-md-6 col-lg-4 col-12 {{ the_field('color', $project->ID) }}" >
+    <a href="{{ get_permalink($project)}}" >
         @php $thumbnail = get_the_post_thumbnail_url($project->ID, 'full') @endphp
-        <img src="{{ $thumbnail }}" />
+        <div class="illustration" style="background-image: url({{ $thumbnail }})"></div>
+    </a>
+
+    <div class="categories">
+        @foreach($categories as $cat)
+            <span>{{$cat->name}}</span>
+        @endforeach
     </div>
-</a>
+    <h2>
+        <a href="{{ get_permalink($project)}}" >{{ $project->post_title }}</a>
+    </h2>
+</div>
