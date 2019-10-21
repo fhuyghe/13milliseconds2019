@@ -11,12 +11,12 @@ $theme-colors: (
 
 @font-face {
   font-family: 'maison-neue';
-  src: url('../fonts/maisonneue-book.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/maisonneue-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/maisonneue-book.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/maisonneue-book.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/maisonneue-book.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/maisonneue-book.svg#maisonneue-book') format('svg'); /* Legacy iOS */
+  src: url('../fonts/MaisonNeue-Mono.woff2') format('woff2'),
+      url('../fonts/MaisonNeue-Mono.woff') format('woff'),
+      url('../fonts/MaisonNeue-Mono.ttf') format('truetype'),
+      url('../fonts/MaisonNeue-Mono.svg#MaisonNeue-Mono') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
