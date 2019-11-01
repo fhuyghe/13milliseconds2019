@@ -6,6 +6,12 @@ body, html{
     padding: 0;
 }
 
+h2{
+    @include media-breakpoint-down(sm){
+        font-size: 1.5em;
+    }
+}
+
 p{
     margin-bottom: 1em;
 
@@ -19,28 +25,45 @@ a{
     text-decoration: underline;
 }
 
+img{
+    max-width: 100%;
+}
+
+.tag{
+    text-transform: uppercase;
+
+    &:after{
+        content: ' • ';
+        color: $black;
+    }
+
+    &:last-child:after{
+        content: none;
+    }
+}
+
 .red{
     .categories{
-        color: theme-color('red');
+        color: theme-color(red);
     }
 }
 .yellow{
     .categories{
-    color: theme-color('yellow');
+    color: theme-color(yellow);
     }
 }
 .green{
     .categories{
-    color: theme-color('green');
+    color: theme-color(green);
     }
 }
 .blue{
     .categories{
-    color: theme-color('blue');
+    color: theme-color(blue);
     }
 }
 .pink{
     .categories{
-    color: theme-color('pink');
+    color: theme-color(pink);
     }
 }

@@ -2,12 +2,15 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  "yellow": #FFF010,
-  "blue": #2C64EA,
-  "pink": #EDC6C6,
-  "red": #EA2C2C,
-  "green": #3FB13B
+  yellow: #FFF010,
+  blue: #2C64EA,
+  pink: #EDC6C6,
+  red: #EA2C2C,
+  green: #3FB13B
 );
+
+$grid-gutter: 50px;
+$grid-gutter-mobile: 20px; 
 
 @font-face {
   font-family: 'maison-neue';

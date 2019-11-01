@@ -41,7 +41,7 @@ export default {
     //Get the weather
     var request = new XMLHttpRequest();
 
-    request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=' + locationData.id +'&APPID=337e8b8078ae36ba233c21a3fe98277f', true);
+    request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=' + locationData.id +'&APPID=337e8b8078ae36ba233c21a3fe98277f', true);
     request.onload = function () {
 
       // Begin accessing JSON data here

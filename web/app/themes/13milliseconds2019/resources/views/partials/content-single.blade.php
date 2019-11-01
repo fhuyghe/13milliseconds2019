@@ -30,7 +30,9 @@
   </div>
 
   
-  <footer id="postNav" class="row">
+  <footer id="postNav">
+    <div class="container">
+    <div class="row">
 
       @php 
         $next_post = get_next_post(); 
@@ -52,11 +54,12 @@
     
       <div class="prev col-md-6 {{ the_field('color', $next_post->ID) }}">
         <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
+          <h6>Previous Project</h6>
           <h3><?php echo esc_attr( $next_post->post_title ); ?></h3>
           <div class="categories">
               @php $categories = get_the_category($next_post->ID); @endphp
               @foreach($categories as $cat)
-                  <span>{{$cat->name}}</span>
+                  <span class="tag">{{$cat->name}}</span>
               @endforeach
           </div>
         </a>
@@ -65,15 +68,18 @@
 
       <div class="next col-md-6 {{ the_field('color', $prev_post->ID) }}">
         <a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
+          <h6>Next Project</h6>
           <h3><?php echo esc_attr( $prev_post->post_title ); ?></h3>
           <div class="categories">
               @php $categories = get_the_category($prev_post->ID); @endphp
               @foreach($categories as $cat)
-                  <span>{{$cat->name}}</span>
+                  <span class="tag">{{$cat->name}}</span>
               @endforeach
           </div>
         </a>
       </div>
 
+    </div>
+    </div>
   </footer>
 </article>

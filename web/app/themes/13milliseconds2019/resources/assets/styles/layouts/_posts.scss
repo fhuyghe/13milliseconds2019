@@ -1,8 +1,10 @@
 article{
     header{
         padding: 100px 20px 200px;
-        background-color: theme-color('blue');
-        color: $white;
+        background-color: theme-color(yellow);
+        color: $black;
+        min-height: 100vh;
+        animation: header-intro 2.5s .5 ease-out forwards;
 
         .wrap{
             max-width: 800px;
@@ -84,10 +86,10 @@ article{
 
     #postNav{
         text-align: center;
-        color: $white;
         font-size: 30px;
 
-        & > div{
+        .next,
+        .prev{
             padding: 50px 20px;
         }
 
@@ -106,5 +108,14 @@ article{
                 font-size: .6em;
             }
         }
+    }
+}
+
+@keyframes header-intro{
+    from {
+        min-height: 100vh;
+    }
+    to{
+        min-height: 0px;
     }
 }

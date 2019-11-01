@@ -20,6 +20,16 @@
     }
   }
 
+  @include media-breakpoint-down(sm){
+    padding: 10px;
+
+    .brand{
+      img{
+        max-width: 60px;
+      }
+    }
+  }
+
   .nav li {
     @extend .nav-item;
   }

@@ -14,8 +14,5 @@
       {!! $clients !!}
     </div>
   </section>
-
-
-  @include('partials.contact-footer')
   
 @endsection

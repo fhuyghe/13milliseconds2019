@@ -1,5 +1,5 @@
 @php $categories = get_the_category($project->ID); @endphp
-<div class="portfolio-item col-md-6 col-lg-4 col-12 {{ the_field('color', $project->ID) }}" >
+<div class="portfolio-item col-md-6 col-lg-4 col-12 {{ the_field('color', $project->ID) }} @foreach($categories as $cat) {{$cat->slug}} @endforeach" >
     <a href="{{ get_permalink($project)}}" >
         @php $thumbnail = get_the_post_thumbnail_url($project->ID, 'full') @endphp
         <div class="illustration" style="background-image: url({{ $thumbnail }})"></div>
@@ -7,7 +7,7 @@
 
     <div class="categories">
         @foreach($categories as $cat)
-            <span>{{$cat->name}}</span>
+            <span class="tag" data-slug="{{$cat->slug}}">{{$cat->name}}</span>
         @endforeach
     </div>
     <h2>

@@ -1,9 +1,10 @@
 //Home
 .home {
     #top {
-        padding: 100px 50px;
-        background-color: theme-color('yellow');
-        font-size: 50px;
+        padding: 100px 50px 200px;
+        margin-bottom: -150px;
+        background-color: theme-color(yellow);
+        font-size: 45px;
 
         .wrap{
             max-width: 1200px;
@@ -12,29 +13,34 @@
         a{
             color: $black;
             text-decoration: underline;
-            text-decoration-color: theme-color('blue');
+            text-decoration-color: theme-color(blue);
             text-decoration-style: wavy;
             -webkit-text-decoration-skip: none;
             //transition: .3s;
 
             &:hover{
-                color: theme-color('blue');
+                color: theme-color(blue);
                 text-decoration-color: $black;
             }
+        }
+
+        @include media-breakpoint-down(sm){
+            padding: $grid-gutter $grid-gutter-mobile 150px;
+            font-size: 1.5em;
         }
     }
 
     #portfolio{
         .portfolio-item{
             display: block;
-            padding: 50px;
+            padding: $grid-gutter;
             border: 2px dashed transparent;
             text-decoration: none;
             display: flex;
             flex-direction: column;
 
             &:hover{
-                border-color: $white;
+                border-color: theme-color(blue);
             }
 
             h2{
@@ -45,26 +51,18 @@
                 }
             }
 
-            .categories{
-                text-transform: uppercase;
-
-                span{
-                    &:after{
-                        content: ', '
-                    }
-
-                    &:last-child{
-                        &:after{
-                            content: ''
-                        }
-                    }
-                }
-            }
-
             .illustration{
                 height: 300px;
                 background-size: cover;
-                margin-bottom: 20px;
+                margin-bottom: $grid-gutter-mobile;
+            }
+
+            @include media-breakpoint-down(sm){
+                padding: $grid-gutter-mobile;
+
+                .illustration{
+                    height: 250px;
+                }
             }
         }
     }
@@ -74,19 +72,27 @@
 .page.about{
     #top, #clients{
         padding: 50px 20px;
-        font-size: 50px;
+        font-size: 35px;
 
         .wrap{
-            max-width: 1000px;
+            max-width: 1200px;
         }
     }
     #top{
-        background-color: theme-color('yellow');
+        background-color: theme-color(yellow);
     }
 
     #clients{
-        background-color: theme-color('blue');
+        background-color: theme-color(blue);
         color: $white;
+    }
+
+    @include media-breakpoint-down(sm){
+        #top, #clients{
+            padding: 20px;
+            padding-right: 50px;
+            font-size: 1.5em;
+        }
     }
 }
 
@@ -97,18 +103,22 @@
     font-size: 30px;
 
     &> div{
-        padding: 50px;
+        padding: $grid-gutter;
+
+        @include media-breakpoint-down(sm){
+            padding: 20px;
+        }
     }
 
     .locationInfo{
-        padding: 50px;
+        padding: $grid-gutter;
         text-align: center;
         display: flex;
         align-items: center;
 
         .cityBlock{
-            margin-bottom: 50px;
-            font-size: 40px;
+            margin-bottom: $grid-gutter;
+            font-size: 2em;
         }
 
         #city{
@@ -116,18 +126,27 @@
         }
 
         i{
-            font-size: 50px;
+            font-size: $grid-gutter;
+        }
+
+        @include media-breakpoint-down(sm){
+            padding: $grid-gutter-mobile;
+
+            .cityBlock{
+                margin-bottom: $grid-gutter;
+                font-size: 1.3em;
+            }
         }
     }
 
     .contactInfo{
-        background-color: theme-color('yellow');
+        background-color: theme-color(yellow);
         display: flex;
         align-items: center;
 
         .email{
-            font-size: 1.5em;
-            margin-bottom: 50px;
+            font-size: 1.2em;
+            margin-bottom: $grid-gutter;
         }
 
         a{
@@ -140,22 +159,17 @@
                 text-decoration: underline;
             }
         }    
+
+        @include media-breakpoint-down(sm){
+            .email{
+                font-size: 1em;
+                margin-bottom: $grid-gutter-mobile;
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .home{
-        #top{
-            font-size: 30px;
-        }
-    }
-
-    .page.about{
-        #top, #clients{
-            font-size: 30px;
-        }
-    }
-
+@include media-breakpoint-down(sm){
     #contact{
         font-size: 20px;
 
@@ -164,10 +178,6 @@
                 font-size: 50px;
                 margin-bottom: 10px;
             }
-        }
-
-        .contactInfo .email{
-            font-size: 1.2em;
         }
     }
 }

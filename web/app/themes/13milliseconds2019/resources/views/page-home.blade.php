@@ -17,8 +17,5 @@
         @endforeach
     </section>
   @endif
-
-
-  @include('partials.contact-footer')
   
 @endsection
