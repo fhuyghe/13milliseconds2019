@@ -11,7 +11,8 @@
 
 
   @if($portfolio)
-    <section id="portfolio" class="row no-gutters">
+    <section id="portfolio" class="grid">
+      <div class="grid-sizer"></div>
         @foreach($portfolio as $project)
           @include('partials.portfolio-item')
         @endforeach

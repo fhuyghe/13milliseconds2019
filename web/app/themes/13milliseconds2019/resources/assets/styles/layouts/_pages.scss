@@ -31,17 +31,13 @@
     }
 
     #portfolio{
-        .portfolio-item{
-            display: block;
-            padding: $grid-gutter;
-            border: 2px dashed transparent;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
+        position: relative;
 
-            &:hover{
-                border-color: theme-color(blue);
-            }
+        .grid-item,
+        .grid-sizer{
+            float: left;
+            width: 25%;
+            padding: $grid-gutter;
 
             h2{
                 margin-bottom: 0;
@@ -51,14 +47,21 @@
                 }
             }
 
-            .illustration{
-                height: 300px;
-                background-size: cover;
+            img{
                 margin-bottom: $grid-gutter-mobile;
+            }
+
+            &.featured{
+                width: 50%;
             }
 
             @include media-breakpoint-down(sm){
                 padding: $grid-gutter-mobile;
+                width: 100%;
+
+                &.featured{
+                    width: 100%;
+                }
 
                 .illustration{
                     height: 250px;
@@ -118,7 +121,7 @@
 
         .cityBlock{
             margin-bottom: $grid-gutter;
-            font-size: 2em;
+            font-size: 1em;
         }
 
         #city{

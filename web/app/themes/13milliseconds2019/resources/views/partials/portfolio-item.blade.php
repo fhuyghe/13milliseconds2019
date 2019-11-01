@@ -1,8 +1,9 @@
 @php $categories = get_the_category($project->ID); @endphp
-<div class="portfolio-item col-md-6 col-lg-4 col-12 {{ the_field('color', $project->ID) }} @foreach($categories as $cat) {{$cat->slug}} @endforeach" >
+@php $featured = get_field('featured', $project->ID) @endphp
+
+<div class="grid-item {{ the_field('color', $project->ID) }} @if($featured)featured @endif @foreach($categories as $cat) {{$cat->slug}} @endforeach" >
     <a href="{{ get_permalink($project)}}" >
-        @php $thumbnail = get_the_post_thumbnail_url($project->ID, 'full') @endphp
-        <div class="illustration" style="background-image: url({{ $thumbnail }})"></div>
+        @php echo get_the_post_thumbnail($project->ID, '@if($featured) large @else medium @endif') @endphp
     </a>
 
     <div class="categories">

@@ -73,8 +73,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "isotope-layout": "^3.0.6",
+    "imagesloaded": "^4.1.4",
     "jquery": "^3.4.1",
+    "masonry-layout": "^4.2.2",
     "moment-timezone": "^0.5.23",
     "popper.js": "^1.14.6"
   }

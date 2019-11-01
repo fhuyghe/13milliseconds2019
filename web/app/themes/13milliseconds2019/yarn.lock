@@ -3262,7 +3262,7 @@ first-chunk-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
 
-fizzy-ui-utils@^2.0.0, fizzy-ui-utils@^2.0.4:
+fizzy-ui-utils@^2.0.0:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
   integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
@@ -3451,7 +3451,7 @@ get-proxy@^2.0.0:
   dependencies:
     npm-conf "^1.1.0"
 
-get-size@^2.0.0, get-size@^2.0.2:
+get-size@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
   integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
@@ -4018,6 +4018,13 @@ imagemin@^6.1.0:
     pify "^4.0.1"
     replace-ext "^1.0.0"
 
+imagesloaded@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-4.1.4.tgz#1376efcd162bb768c34c3727ac89cc04051f3cc7"
+  integrity sha512-ltiBVcYpc/TYTF5nolkMNsnREHW+ICvfQ3Yla2Sgr71YFwQ86bDwV9hgpFhFtrGPuwEx5+LqOHIrdXBdoWwwsA==
+  dependencies:
+    ev-emitter "^1.0.0"
+
 immutable@^3:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
@@ -4484,17 +4491,6 @@ isobject@^2.0.0:
 isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
-
-isotope-layout@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.6.tgz#d5636ec74d68e7e88fa5166fe6396858db00f432"
-  integrity sha512-z2ZKablhocXhoNyWwzJPFd7u7FWbYbVJA51Nvsqsod8jH2ExGc1SwDsSWKE54e3PhXzqf2yZPhFSq/c2MR1arw==
-  dependencies:
-    desandro-matches-selector "^2.0.0"
-    fizzy-ui-utils "^2.0.4"
-    get-size "^2.0.0"
-    masonry-layout "^4.1.0"
-    outlayer "^2.1.0"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -5033,7 +5029,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-masonry-layout@^4.1.0:
+masonry-layout@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/masonry-layout/-/masonry-layout-4.2.2.tgz#d57b44af13e601bfcdc423f1dd8348b5524de348"
   integrity sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA==
