@@ -12,7 +12,7 @@ class FrontPage extends Controller
 	    $args = array(
 	    	'post_type' => 'post',
 	    	//'orderby'	=> 'rand',
-	    	//'posts_per_page' => 10,
+	    	'posts_per_page' => -1,
 	    );
 	    $the_query = new WP_Query( $args );
 	    return $the_query->posts;
