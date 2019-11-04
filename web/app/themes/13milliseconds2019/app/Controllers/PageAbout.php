@@ -8,8 +8,13 @@ use WP_Query;
 class PageAbout extends Controller
 {
 
-	public function clients() {
-        return get_field('client_section');
+	public function data() {
+		
+		$data['client_section'] = get_field('client_section');
+		$data['sharon_photo'] = get_field('sharon_photo');
+		$data['francois_photo'] = get_field('francois_photo');
+		
+		return $data;
 	}
 
 }

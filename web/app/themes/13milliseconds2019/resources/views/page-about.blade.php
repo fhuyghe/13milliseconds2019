@@ -6,12 +6,16 @@
       @while(have_posts()) @php the_post() @endphp
         @php the_content() @endphp
       @endwhile
+      <div class="photos">
+        <img class="sharon" src="{{ $data['sharon_photo']['sizes']['large'] }}" />
+        <img class="francois" src="{{ $data['francois_photo']['sizes']['large'] }}" />
+      </div>
     </div>
   </section>
 
   <section id="clients">
       <div class="wrap">
-      {!! $clients !!}
+      {!! $data['client_section'] !!}
     </div>
   </section>
   
