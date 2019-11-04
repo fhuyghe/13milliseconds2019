@@ -32,6 +32,7 @@ img{
 
 .tag{
     text-transform: uppercase;
+    white-space: nowrap;
 
     &:after{
         content: ' • ';

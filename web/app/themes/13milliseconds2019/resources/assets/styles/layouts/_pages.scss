@@ -1,8 +1,8 @@
 //Home
 .home {
     #top {
-        padding: 100px 50px 200px;
-        margin-bottom: -150px;
+        padding: 100px 50px;
+        margin-bottom: $grid-gutter;
         background-color: theme-color(yellow);
         font-size: 45px;
 
@@ -12,15 +12,20 @@
 
         a{
             color: $black;
-            text-decoration: underline;
-            text-decoration-color: theme-color(blue);
-            text-decoration-style: wavy;
-            -webkit-text-decoration-skip: none;
+            display: inline-block;
+            border-bottom: 4px solid theme-color(blue);
+            text-decoration: none;
+            padding-bottom: 0;
+            line-height: 1em;
+            //text-decoration: underline;
+            //text-decoration-color: theme-color(blue);
+            //text-decoration-style: wavy;
+            //-webkit-text-decoration-skip: none;
             //transition: .3s;
 
             &:hover{
                 color: theme-color(blue);
-                text-decoration-color: $black;
+                border-bottom-color: $black;
             }
         }
 
@@ -47,8 +52,20 @@
                 }
             }
 
-            img{
+            .grid-image{
+                display: inline-block;
+                background-color: theme-color(yellow);
                 margin-bottom: $grid-gutter-mobile;
+                
+                img{
+                    transition: opacity .3s;
+                }
+
+                &:hover{
+                    img{
+                        opacity: .8;
+                    }
+                }
             }
 
             &.featured{
