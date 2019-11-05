@@ -6,6 +6,10 @@ body, html{
     padding: 0;
 }
 
+.wrap{
+    max-width: 1200px;
+}
+
 h2{
     @include media-breakpoint-down(sm){
         font-size: 1.5em;

@@ -6,10 +6,6 @@
         background-color: theme-color(yellow);
         font-size: 45px;
 
-        .wrap{
-            max-width: 1200px;
-        }
-
         a{
             color: $black;
             display: inline-block;
@@ -37,12 +33,13 @@
 
     #portfolio{
         position: relative;
+        padding: 0 $grid-gutter / 2;
 
         .grid-item,
         .grid-sizer{
             float: left;
             width: 33.33%;
-            padding: $grid-gutter;
+            padding: $grid-gutter / 2;
 
             h2{
                 margin-bottom: 0;
