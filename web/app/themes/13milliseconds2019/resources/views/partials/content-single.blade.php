@@ -56,12 +56,12 @@
         <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
           <h6>Previous Project</h6>
           <h3><?php echo esc_attr( $next_post->post_title ); ?></h3>
-          <div class="categories">
+          {{-- <div class="categories">
               @php $categories = get_the_category($next_post->ID); @endphp
               @foreach($categories as $cat)
                   <span class="tag">{{$cat->name}}</span>
               @endforeach
-          </div>
+          </div> --}}
         </a>
       </div>
     
@@ -70,12 +70,12 @@
         <a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
           <h6>Next Project</h6>
           <h3><?php echo esc_attr( $prev_post->post_title ); ?></h3>
-          <div class="categories">
+          {{-- <div class="categories">
               @php $categories = get_the_category($prev_post->ID); @endphp
               @foreach($categories as $cat)
                   <span class="tag">{{$cat->name}}</span>
               @endforeach
-          </div>
+          </div> --}}
         </a>
       </div>
 

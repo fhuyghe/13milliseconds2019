@@ -6,6 +6,10 @@ article{
         min-height: 100vh;
         animation: header-intro 2.5s .5 ease-out forwards;
 
+        p{
+            font-size: 1.2em;
+        }
+
         .wrap{
             max-width: 800px;
             margin: auto;
@@ -62,6 +66,10 @@ article{
                     border: 2px solid lightgrey;
                     position: relative;
 
+                    @include media-breakpoint-down(sm){
+                        height: 300px;
+                    }
+
                     img{
                         width: 100%;
                     }
@@ -87,6 +95,11 @@ article{
     #postNav{
         text-align: center;
         font-size: 30px;
+        background-color: theme-color(pink);
+
+        .container{
+            max-width: none;
+        }
 
         .next,
         .prev{
@@ -107,6 +120,14 @@ article{
             .categories{
                 font-size: .6em;
             }
+        }
+    }
+}
+
+.single{
+    #contact .locationInfo{
+        @include media-breakpoint-down(sm){
+            display: none;
         }
     }
 }

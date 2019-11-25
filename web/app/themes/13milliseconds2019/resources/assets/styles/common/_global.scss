@@ -37,6 +37,7 @@ img{
 .tag{
     text-transform: uppercase;
     white-space: nowrap;
+    color: theme-color(blue);
 
     &:after{
         content: ' • ';
