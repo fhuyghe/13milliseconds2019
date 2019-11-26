@@ -29,11 +29,12 @@
     #portfolio{
         position: relative;
         padding: 0 $grid-gutter / 2;
+        padding-right: 120px;
 
         .grid-item,
         .grid-sizer{
             float: left;
-            width: 33.33%;
+            width: 25%;
             padding: $grid-gutter / 2;
 
             h2{
@@ -58,7 +59,7 @@
             }
 
             &.featured{
-                width: 66.66%;
+                width: 50%;
             }
 
             &:hover{
