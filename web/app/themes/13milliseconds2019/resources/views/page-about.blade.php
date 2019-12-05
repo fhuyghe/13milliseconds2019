@@ -14,9 +14,16 @@
   </section>
 
   <section id="clients">
-      <div class="wrap">
-      {!! $data['client_section'] !!}
-    </div>
+        <h2>Select Clients</h2>
+        @if($data['client_logos'])
+          <div class="client-logos row">
+          @foreach ($data['client_logos'] as $logo)
+              <div class="client col-4 col-md-2">
+              <img src="{{ $logo['url'] }}">
+              </div>
+          @endforeach
+          </div>
+        @endif
   </section>
   
 @endsection

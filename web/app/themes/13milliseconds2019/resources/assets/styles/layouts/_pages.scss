@@ -35,7 +35,7 @@
         .grid-sizer{
             float: left;
             width: 25%;
-            padding: $grid-gutter / 2;
+            padding: $grid-gutter / 2 $grid-gutter / 2 $grid-gutter * 1.5;
 
             h2{
                 display: inline;
@@ -99,8 +99,8 @@
     #top{
         background-color: theme-color(yellow);
 
-        .sharon, 
-        .francois{
+        span.sharon, 
+        span.francois{
             white-space: nowrap;
             display: inline-block;
             line-height: 1em;
@@ -123,7 +123,8 @@
             .sharon, 
             .francois{
                 display: none;
-                max-width: 600px;
+                height: 80%;
+                max-height: 800px;
 
                 &.active{
                     display: block;
@@ -135,6 +136,24 @@
     #clients{
         background-color: theme-color(blue);
         color: $white;
+
+        .client-logos{
+            padding: $grid-gutter 0;
+
+            .client{
+                padding: $grid-gutter / 2;
+                
+                @include media-breakpoint-up(md){
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                }
+
+                @include media-breakpoint-up(lg){
+                    flex: 0 0 10%;
+                    max-width: 10%;
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(sm){
