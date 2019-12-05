@@ -12,6 +12,8 @@
       @foreach ($media as $block)
         @if ($block['acf_fc_layout'] == 'image')
           @include('partials.media.image')
+        @elseif ($block['acf_fc_layout'] == 'two_images')
+          @include('partials.media.two-images')
         @elseif ($block['acf_fc_layout'] == 'gallery')
           @include('partials.media.gallery')
         @elseif ($block['acf_fc_layout'] == 'website_spread')
