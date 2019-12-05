@@ -22,7 +22,11 @@ article{
         margin: -100px auto 100px;
 
         .media-block{
-            margin-bottom: 50px;
+            margin-bottom: $grid-gutter;
+
+            @include media-breakpoint-up(md){
+                margin-bottom: $grid-gutter * 2;
+            }
 
             &.image{
                 img{

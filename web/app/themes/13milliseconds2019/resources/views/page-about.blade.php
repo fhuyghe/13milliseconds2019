@@ -18,7 +18,7 @@
         @if($data['client_logos'])
           <div class="client-logos row">
           @foreach ($data['client_logos'] as $logo)
-              <div class="client col-4 col-md-2">
+              <div class="client col-3 col-md-2">
               <img src="{{ $logo['url'] }}">
               </div>
           @endforeach

@@ -99,6 +99,10 @@
     #top{
         background-color: theme-color(yellow);
 
+        @include media-breakpoint-up(md){
+            padding-right: 150px;
+        }
+
         span.sharon, 
         span.francois{
             white-space: nowrap;
@@ -119,6 +123,7 @@
             justify-content: center;
             align-items: center;
             pointer-events:none;
+            background-color: rgba(0,0,0, 0.005); //Seems to help refresh the display
 
             .sharon, 
             .francois{
@@ -141,7 +146,7 @@
             padding: $grid-gutter 0;
 
             .client{
-                padding: $grid-gutter / 2;
+                padding: 10px;
                 
                 @include media-breakpoint-up(md){
                     flex: 0 0 20%;
@@ -169,7 +174,16 @@
 //Contact Footer
 #contact{
     padding: 0;
-    font-size: 30px;
+    font-size: 18px;
+
+    
+    @include media-breakpoint-up(md){
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-up(xl){
+        font-size: 25px;
+    }
 
     &> div{
         padding: $grid-gutter;
@@ -194,6 +208,7 @@
 
         #city{
             text-decoration: underline;
+            white-space: nowrap;
         }
 
         i{
@@ -218,6 +233,10 @@
         .email{
             font-size: 1.2em;
             margin-bottom: $grid-gutter;
+
+            @include media-breakpoint-down(md){
+                margin-bottom: $grid-gutter-mobile;
+            }
         }
 
         a{
@@ -230,13 +249,6 @@
                 text-decoration: underline;
             }
         }    
-
-        @include media-breakpoint-down(sm){
-            .email{
-                font-size: 1em;
-                margin-bottom: $grid-gutter-mobile;
-            }
-        }
     }
 }
 
