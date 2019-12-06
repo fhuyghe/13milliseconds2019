@@ -11,8 +11,10 @@ class Single extends Controller
 		return get_field('media');
 	}
 
-	public function color() {
-		return get_field('color');
+	public function data() {
+		$data['live_link'] = get_field('live_link');
+		
+		return $data;
 	}
 
 }

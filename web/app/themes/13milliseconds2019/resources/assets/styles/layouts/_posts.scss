@@ -6,6 +6,10 @@ article{
         min-height: 100vh;
         animation: header-intro 2.5s .5 ease-out forwards;
 
+        h1 a {
+            font-size: .5em;
+        }
+
         p{
             font-size: 1.2em;
         }

@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
   z-index: 99;
 
   .brand{
@@ -21,8 +21,6 @@
   }
 
   @include media-breakpoint-down(sm){
-    padding: 10px;
-
     .brand{
       img{
         max-width: 60px;

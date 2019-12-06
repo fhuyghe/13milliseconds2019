@@ -1,8 +1,12 @@
 <article>
 
-  <header class="{{$color}}">
+  <header>
     <div class="wrap">
-      <h1 class="entry-title">{{ get_the_title() }}</h1>
+      <h1 class="entry-title">{{ get_the_title() }}
+      @if($data['live_link'])
+        <a href="{{ $data['live_link'] }}" target="_blank"><i class="far fa-external-link"></i> </a>
+      @endif
+      </h1>
       @php the_content() @endphp
     </div>
   </header>
@@ -54,7 +58,7 @@
       @endif
 
     
-      <div class="prev col-md-6 {{ the_field('color', $next_post->ID) }}">
+      <div class="prev col-md-6">
         <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
           <h6>Previous Project</h6>
           <h3><?php echo esc_attr( $next_post->post_title ); ?></h3>
@@ -68,7 +72,7 @@
       </div>
     
 
-      <div class="next col-md-6 {{ the_field('color', $prev_post->ID) }}">
+      <div class="next col-md-6">
         <a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
           <h6>Next Project</h6>
           <h3><?php echo esc_attr( $prev_post->post_title ); ?></h3>
