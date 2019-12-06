@@ -60,8 +60,8 @@
     
       <div class="prev col-md-6">
         <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
-          <h6>Previous Project</h6>
-          <h3><?php echo esc_attr( $next_post->post_title ); ?></h3>
+          <h6><i class="fal fa-arrow-left"></i> Previous</h6>
+          {{-- <h3>{{ esc_attr( $next_post->post_title ) }}</h3> --}}
           {{-- <div class="categories">
               @php $categories = get_the_category($next_post->ID); @endphp
               @foreach($categories as $cat)
@@ -74,8 +74,8 @@
 
       <div class="next col-md-6">
         <a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
-          <h6>Next Project</h6>
-          <h3><?php echo esc_attr( $prev_post->post_title ); ?></h3>
+          <h6>Next <i class="fal fa-arrow-right"></i></h6>
+          {{-- <h3>{{ esc_attr( $prev_post->post_title ) }}</h3> --}}
           {{-- <div class="categories">
               @php $categories = get_the_category($prev_post->ID); @endphp
               @foreach($categories as $cat)

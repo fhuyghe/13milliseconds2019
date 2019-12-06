@@ -103,15 +103,22 @@ article{
     #postNav{
         text-align: center;
         font-size: 30px;
-        background-color: theme-color(pink);
-
-        .container{
-            max-width: none;
-        }
-
+ 
         .next,
         .prev{
             padding: 50px 20px;
+
+            i{
+                transition: .3s;
+            }
+        }
+
+        .prev{
+            text-align: right;
+        }
+
+        .next{
+            text-align: left;
         }
 
         a{
@@ -120,8 +127,8 @@ article{
             &:hover{
                 color: inherit;
 
-                h3{
-                    text-decoration: underline;
+                i{
+                    padding: 0 10px;
                 }
             }
 
