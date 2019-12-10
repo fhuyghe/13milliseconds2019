@@ -97,6 +97,36 @@ article{
                     max-height: 1000px;
                 }
             }
+
+            &.videotext{
+                video{
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: 1000px;
+                }
+
+                .row{
+                    .text{
+                        margin-top: 20px;
+                    }
+                }
+
+                @include media-breakpoint-up(md){
+                    .row{
+                        align-items: center;
+    
+                        .text{
+                            margin-top: 0;
+                        }
+                    }
+                    
+                    &:nth-child(2n){
+                        .row{
+                            flex-direction: row-reverse;
+                        }
+                    }
+                }
+            }
         }
     }
 

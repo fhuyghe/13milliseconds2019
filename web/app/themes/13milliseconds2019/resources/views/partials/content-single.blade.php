@@ -24,6 +24,8 @@
           @include('partials.media.websiteSpread')
         @elseif ($block['acf_fc_layout'] == 'video')
           @include('partials.media.video')
+          @elseif ($block['acf_fc_layout'] == 'videotext')
+          @include('partials.media.video-text')
         @elseif ($block['acf_fc_layout'] == 'embed')
           @include('partials.media.embed')
         @elseif ($block['acf_fc_layout'] == 'text')
