@@ -27,6 +27,13 @@ p{
 a{
     color: inherit;
     text-decoration: underline;
+
+    &.btn{
+        background-color: theme-color(yellow);
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
 }
 
 img{
@@ -72,5 +79,19 @@ img{
 .pink{
     .categories{
     color: theme-color(pink);
+    }
+}
+
+.error404{
+    .content{
+        min-height: 100vh;
+        padding: $grid-gutter * 2 0;
+        position: relative;
+
+        .gif-404{
+            position: absolute;
+            bottom: 0;
+            right: $grid-gutter;
+        }
     }
 }
