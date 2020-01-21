@@ -60,7 +60,7 @@
       @endif
 
     
-      <div class="prev col-md-6">
+      <div class="prev col-6">
         <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
           <h6><i class="fal fa-arrow-left"></i> Previous</h6>
           {{-- <h3>{{ esc_attr( $next_post->post_title ) }}</h3> --}}
@@ -74,7 +74,7 @@
       </div>
     
 
-      <div class="next col-md-6">
+      <div class="next col-6">
         <a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
           <h6>Next <i class="fal fa-arrow-right"></i></h6>
           {{-- <h3>{{ esc_attr( $prev_post->post_title ) }}</h3> --}}

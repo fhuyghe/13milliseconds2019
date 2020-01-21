@@ -21,15 +21,17 @@
         }
 
         @include media-breakpoint-down(sm){
-            padding: $grid-gutter * 2 $grid-gutter-mobile $grid-gutter;
-            font-size: 1.5em;
+            padding: $grid-gutter-mobile;
+            padding-right: 80px;
+            //padding: $grid-gutter * 2 $grid-gutter-mobile $grid-gutter;
+            font-size: 1.1em;
         }
     }
 
     #portfolio{
         position: relative;
         padding: 0 $grid-gutter / 2;
-        padding-right: 120px;
+        //padding-right: 90px;
 
         .grid-item,
         .grid-sizer{
@@ -220,7 +222,7 @@
 
             .cityBlock{
                 margin-bottom: $grid-gutter;
-                font-size: 1.3em;
+                //font-size: 1.3em;
             }
         }
     }
@@ -236,6 +238,7 @@
 
             @include media-breakpoint-down(md){
                 margin-bottom: $grid-gutter-mobile;
+                font-size: 1em;
             }
         }
 
