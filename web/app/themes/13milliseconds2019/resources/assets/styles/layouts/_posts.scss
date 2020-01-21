@@ -18,6 +18,10 @@ article{
             max-width: 800px;
             margin: auto;
         }
+
+        @include media-breakpoint-down(sm){
+            padding: 100px 20px 150px;
+        }
     }
 
     .entry-content{
