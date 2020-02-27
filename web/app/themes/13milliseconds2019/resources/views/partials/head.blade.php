@@ -4,6 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   @php wp_head() @endphp
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74357159-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-74357159-1');
+  </script>
+
+
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/favicon/apple-icon-57x57.png')">
   <link rel="apple-touch-icon" sizes="60x60" href="@asset('images/favicon/apple-icon-60x60.png')">
   <link rel="apple-touch-icon" sizes="72x72" href="@asset('images/favicon/apple-icon-72x72.png')">
