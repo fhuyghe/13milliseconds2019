@@ -37,4 +37,10 @@
         </div>
     </div>
 </section>
+<section id="newsletter">
+    <div class="container">
+        <p>{{ $options->newsletter_text }}</p>
+        @include('partials.newsletter-signup')
+    </div>
+</section>
 </footer>

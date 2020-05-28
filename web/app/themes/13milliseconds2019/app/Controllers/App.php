@@ -36,6 +36,7 @@ class App extends Controller
             'location' => get_field('location', 'option'),
             'contactEmail' => get_field('contact_email', 'option'),
             'links' => get_field('links', 'option'),
+            'newsletter_text' => get_field('newsletter_text', 'option'),
         ];
 
         return $options;
