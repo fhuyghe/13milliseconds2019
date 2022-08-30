@@ -80,7 +80,7 @@
     "lodash.template": "^4.5.0",
     "masonry-layout": "^4.2.2",
     "mem": "^6.0.1",
-    "moment-timezone": "^0.5.23",
+    "moment-timezone": "^0.5.35",
     "popper.js": "^1.14.6"
   }
 }
